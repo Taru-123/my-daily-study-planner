@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    background-image: url("images/stydy\ img.jpg");
+    /* background: linear-gradient(135deg, #eee7ff, #fdf6ff, #e6e6fa); */
+    margin: 0;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255,255,255,0.95);
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px #c9b8df;
+}
+
+h1 {
+    text-align: center;
+    color: #57228c;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+}
+
+.date-box {
+    background: #f5efff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 25px 0;
+    color: #57228c;
+}
+
+.date-box h3 {
+    margin-bottom: 0;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #d5c5ed;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #7029a6;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4d167d;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #f6f1ff;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    color: #43205f;
+}
+
+.progress span {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #792eb0;
+}
+
+.task-heading {
+    color: #57228c;
+    margin-top: 30px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #faf8ff;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #e5dcef;
+}
+
+li input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    accent-color: #7029a6;
+}
+
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-date {
+    color: #8251a6;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.delete-btn {
+    background: transparent;
+    color: red;
+    padding: 5px;
+}
+
+.clear-btn {
+    background: #e9d9ff;
+    color: #67239b;
+    margin-top: 15px;
+}
+
+.footer {
+    text-align: center;
+    background: #f5efff;
+    color: #7029a6;
+    padding: 14px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+@media(max-width: 500px) {
+    .container {
+        padding: 18px;
+    }
+
+    .input-box {
+        flex-wrap: wrap;
+    }
+
+    .input-box button {
+        width: 100%;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+}
